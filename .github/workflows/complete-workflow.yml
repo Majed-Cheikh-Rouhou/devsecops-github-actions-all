@@ -20,8 +20,8 @@ jobs:
     - name: Run Sonar Analysis with cloud
       run: >
         mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-        -Dsonar.projectKey=testoneado
-        -Dsonar.organization=testoneado
+        -Dsonar.projectKey=Majed-Cheikh-Rouhou_devsecops-github-actions-all
+        -Dsonar.organization=majed-cheikh-rouhou
         -Dsonar.host.url=https://sonarcloud.io
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
